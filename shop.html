@@ -2,19 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
      <header>
       <div class="logo">
-        <a href="#">Barbershop</a>
+        <a href="index.html">Barbershop</a>
       </div>
       <nav class="header-menu">
         <ul>
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">НОВОСТИ</a></li>
-          <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-          <li class="header-menu-active"><a href="#">МАГАЗИН</a></li>
+          <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+          <li class="header-menu-active"><a href="shop.html">МАГАЗИН</a></li>
           <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
       </nav>
@@ -43,7 +44,7 @@
           <input type="checkbox" id="in-natty" name="in-natty">
           
           <label for="in-suavecito">SUAVECITO</label>
-          <input type="checkbox" id="in-suavecito" name="in-suavecito"checked>
+          <input type="checkbox" id="in-suavecito" name="in-suavecito" checked>
           
           <label for="in-malin">MALIN+GOETZ</label>
           <input type="checkbox" id="in-malin" name="in-malin">
@@ -51,8 +52,8 @@
           <label for="in-murray">MURRAY`S</label>
           <input type="checkbox" id="in-murray" name="in-muray">
           
-          <label for="in-acrew>AMERICAN CREW</label>
-          <input type="checkbox" id="in-acrew" name="in-acrew"checked>
+          <label for="in-acrew">AMERICAN CREW</label>
+          <input type="checkbox" id="in-acrew" name="in-acrew" checked>
         </fieldset>   
         
         <fieldset>
@@ -71,20 +72,22 @@
       </form>
       <div class="items">
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Набор для путешествий" width="220px" height="170px">
-          <div class="items-item-caption"> Набор для путешествий "BAXTER OF CALIFORNIA"</div>
-          <div class="items-item-wraper">
-            <div class="items-item-cost">
-              2900 РУБ.
-            </div>
-            <button type="button">
-              КУПИТЬ
-            </button>
-          </div>
+          <a href="item.html">
+            <img src="img/shop-settraveler.jpg" alt="Набор для путешествий" width="220" height="165">
+            <div class="items-item-caption"> Набор для путешествий "BAXTER OF CALIFORNIA"</div>
+          </a>    
+            <div class="items-item-wraper">
+              <div class="items-item-cost">
+                2900 РУБ.
+              </div>
+              <button type="button">
+                КУПИТЬ
+              </button>
+            </div>          
         </div>     
         
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Увлажняющий кондиционер" width="220px" height="170px">
+          <img src="img/shop-conditioning.jpg" alt="Увлажняющий кондиционер" width="220" height="165">
           <div class="items-item-caption"> Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</div>
           <div class="items-item-wraper">
             <div class="items-item-cost">
@@ -97,20 +100,20 @@
         </div>    
 
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Гель для волос" width="220px" height="170px">
+          <img src="img/shop-gel-suavecito.jpg" alt="Гель для волос" width="220" height="165">
           <div class="items-item-caption">Гель для волос "SUAVECITO"</div>
           <div class="items-item-wraper">
             <div class="items-item-cost">
               290 РУБ.
             </div>
-            <button>
+            <button type="button">
               КУПИТЬ
-            </button type="button">
+            </button>
           </div>
         </div>   
 
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Глина для укладки волос" width="220px" height="170px">
+          <img src="img/shop-clay.jpg" alt="Глина для укладки волос" width="220" height="165">
           <div class="items-item-caption">Глина для укладки волос "AMERICAN CREW"</div>
           <div class="items-item-wraper">
             <div class="items-item-cost">
@@ -123,7 +126,7 @@
         </div>   
 
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Гель для волос" width="220px" height="170px">
+          <img src="img/shop-gel-crew.jpg" alt="Гель для волос" width="220" height="165">
           <div class="items-item-caption">Гель для волос "AMERICAN CREW"</div>
           <div class="items-item-wraper">
             <div class="items-item-cost">
@@ -136,7 +139,7 @@
         </div>   
 
         <div class="items-item">
-          <img src="//placehold.it/220x170" alt="Набор для бритья" width="220px" height="170px">
+          <img src="img/shop-shaving.jpg" alt="Набор для бритья" width="220" height="165">
           <div class="items-item-caption">Набор для бритья "BAXTER OF CALIFORNIA"</div>
           <div class="items-item-wraper">
             <div class="items-item-cost">
@@ -157,14 +160,14 @@
       </ul>
     </main>
     <footer>
-      <article class="contacts">
+      <div class="contacts">
         <span>
           БАРБЕРШОП "БОРОДИНСКИЙ"<br>
           АДРЕС: Г.САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ, Д.19/8"<br>
           <a href="#">КАК НАС НАЙТИ?</a><br>
           ТЕЛЕФОН: +7 (495)666-02-66
         </span>
-      </article>
+      </div>
       <div class="friends">
         <span>ДАВАЙТЕ ДРУЖИТЬ</span>
         <!-- Кнопки будут заданы в css. Пока так  -->
