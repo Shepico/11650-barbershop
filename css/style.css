@@ -1,7 +1,7 @@
 body {
-  
   background-color: #000000;
   margin: 0 auto; 
+  font-size: 16px;
 }
 /*header*/
 
@@ -84,9 +84,12 @@ main {
 .goods-foto-head{
   margin-bottom: 20px;
 }
+.goods-foto-list>img:not(:first-of-type) {
+  margin-left: -0.25em;
+}
 
 .goods-foto-list>img:not(:last-child) {
-  margin-right: 16px;
+   margin-right: 20px;
 }
 
 .goods-about {
