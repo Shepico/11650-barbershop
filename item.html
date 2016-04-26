@@ -6,7 +6,7 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-    <header>
+      <header class="wrapper clearfix">
       <div class="logo">
         <a href="index.html">Barbershop</a>
       </div>
@@ -23,7 +23,9 @@
         <a href="#">ВХОД</a>
       </div>
     </header>
-    <h2>набор для путешествий "baxter of california"</h2>
+    <main>
+    <div class="wrapper">
+    <h1 class="part">Набор для путешествий "baxter of california"</h1>
     <div class="breadcrumbs">
       <ul>
         <li><a href="#">главная</a></li>
@@ -32,15 +34,15 @@
         <li>набор для путешествий "baxter of california"</li>
       </ul>  
     </div>
-    <main>
+    <div class="clearfix">
       <div class="goods-foto">
         <div class="goods-foto-head">
-          <img src="img/item-traveler-big.jpg" alt="набор" width="486" height="524">
+          <img src="img/item-traveler-big.jpg" alt="набор" width="460" height="499"><!--width="486" height="524">-->
         </div>
         <div class="goods-foto-list">
-          <img src="img/item-traveler-small-1.jpg" alt="набор-1" width="166" height="175">
-          <img src="img/item-traveler-small-2.jpg" alt="набор-2" width="166" height="175">
-          <img src="img/item-traveler-small-3.jpg" alt="набор-3" width="166" height="175">
+          <img src="img/item-traveler-small-1.jpg" alt="набор-1" width="140" height="149"><!--width="166" height="175">-->
+          <img src="img/item-traveler-small-2.jpg" alt="набор-2" width="140" height="149">
+          <img src="img/item-traveler-small-3.jpg" alt="набор-3" width="140" height="149">
         </div>
       </div>
       <div class="goods-about">
@@ -52,7 +54,7 @@
           В аккуратной кожаной сумке находится все, что нужно для бритья 
           и ухода за кожей во время рабочей поездки или отдыха: средство
           для умывания, увлажняющий крем, крем для бритья, крем после бритья, 
-          шампунь. Наблр также может стать отличным подарком.
+          шампунь. Набор также может стать отличным подарком.
         </p>
         <div class="goods-about-cost">
           <span>2 900 руб.</span>
@@ -69,18 +71,20 @@
           </ul>
         </div>
       </div>
+      </div>
+      </div>
     </main>
-    <footer>
+    <footer class="wrapper clearfix">
       <div class="contacts">
-        <span>
+        <div>
           БАРБЕРШОП "БОРОДИНСКИЙ"<br>
           АДРЕС: Г.САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ, Д.19/8"<br>
           <a href="#">КАК НАС НАЙТИ?</a><br>
           ТЕЛЕФОН: +7 (495)666-02-66
-        </span>
+        </div>
       </div>
       <div class="friends">
-        <span>ДАВАЙТЕ ДРУЖИТЬ</span>
+        <span>ДАВАЙТЕ ДРУЖИТЬ</span><br>
         <!-- Кнопки будут заданы в css. Пока так  -->
         <a href="#"><img src="//placehold.it/45x45" alt="В контакте" width="45" height="45"></a>
         <a href="#"><img src="//placehold.it/45x45" alt="Фейсбук" width="45" height="45"></a>
@@ -90,6 +94,7 @@
         РАЗРАБОТАНО: 
         <a href="//www.htmlacademy.ru">HTMLACADEMY.RU</a>
       </div>
+
     </footer>
   </body>
 </html>

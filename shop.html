@@ -6,7 +6,7 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-     <header>
+     <header class="wrapper clearfix">
       <div class="logo">
         <a href="index.html">Barbershop</a>
       </div>
@@ -24,7 +24,8 @@
       </div>
     </header>
     <main>
-      <h2>Средства для ухода</h2>
+      <div class="wrapper">
+      <h1 class="part">Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
           <li><a href="#">главная</a></li>
@@ -32,7 +33,8 @@
           <li>средства для ухода</li>        
         </ul>  
       </div>
-      
+      </div>
+      <div class="wrapper clearfix">
       <form class="selection" action="#" method="post">
         <fieldset>
           <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -151,25 +153,26 @@
           </div>
         </div>     
           
-      </div>
       <ul class="pagination">
         <li><a href=#>1</a></li>
         <li class="pagination-active"><a href=#>2</a></li>
         <li><a href=#>3</a></li>
         <li><a href=#>4</a></li>
       </ul>
+      </div>
+      </div>
     </main>
-    <footer>
+    <footer class="wrapper clearfix">
       <div class="contacts">
-        <span>
+        <div>
           БАРБЕРШОП "БОРОДИНСКИЙ"<br>
           АДРЕС: Г.САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ, Д.19/8"<br>
           <a href="#">КАК НАС НАЙТИ?</a><br>
           ТЕЛЕФОН: +7 (495)666-02-66
-        </span>
+        </div>
       </div>
       <div class="friends">
-        <span>ДАВАЙТЕ ДРУЖИТЬ</span>
+        <span>ДАВАЙТЕ ДРУЖИТЬ</span><br>
         <!-- Кнопки будут заданы в css. Пока так  -->
         <a href="#"><img src="//placehold.it/45x45" alt="В контакте" width="45" height="45"></a>
         <a href="#"><img src="//placehold.it/45x45" alt="Фейсбук" width="45" height="45"></a>
@@ -179,6 +182,7 @@
         РАЗРАБОТАНО: 
         <a href="//www.htmlacademy.ru">HTMLACADEMY.RU</a>
       </div>
+
     </footer>
   </body>
 </html>
