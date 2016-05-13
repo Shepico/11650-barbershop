@@ -23,24 +23,25 @@ body {
   font-size: 14px;
   line-height: 24px;
   background-color: #000000;
-  color: #ffffff;
-  
-  
+  color: #ffffff; 
 }
+
+
+
 /*header*/
-header: {
-  min-height: 73px;
+header {
+  min-height: 74px;
+  text-align: center;
   background-color: #000000; 
 }
 
-/*nav{
-  float: left;
-}*/
+nav {
+  background-color: red;
+}
 
 .logo-nav {
   float: left;
   width: 140px;
-  background-color: yellow;
 }
 
 .menu-items-nav {
@@ -48,9 +49,8 @@ header: {
   width: 700px;
   margin: 0 20px;
   padding: 0;
-  background-color: white;
-  
 }
+
 .mi-nav {
   display:inline-block;
   margin: 0;
@@ -59,21 +59,65 @@ header: {
   list-style:none;  
 }
 
+.menu-items-nav li:not(:first-child) span{
+  display: inline-block;
+  margin-left: -0.25em;
+  margin-right: 40px;
+  text-transform: uppercase;
+  color: #ffffff; 
+}
+
 .menu-items-nav a{
   display: inline-block;
   margin-left: -0.25em;
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  
+  color: #ffffff; 
 }
+
+.menu-items-nav li:first-child a {
+  margin-left: 0;
+}
+
+
 .login-nav {
   float: right;
   width: 60px;
-  
+  height: 100%;
+  text-align: center;
   
   background-color: lightgreen;
 }
+
+/*footer*/
+footer {
+  background-color: #212121;
+}
+.contacts {
+  float:left;
+  width: 330px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 70px;  
+}
+
+.frieds {
+  float:left;
+  width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+
+.design {
+  float:right;
+  width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+/*=========================================================*/
 
 /*main*/
 
@@ -141,28 +185,7 @@ header: {
 }
 
 
-/*footer*/
-.contacts {
-  float:left;
-  width: 330px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 70px;  
-}
 
-.frieds {
-  float:left;
-  width: 160px;
-  padding-left: 10px;
-  padding-right: 10px;  
-}
-
-.design {
-  float:right;
-  width: 160px;
-  padding-left: 10px;
-  padding-right: 10px;  
-}
 
 /* магазин */
 .shop-main {
