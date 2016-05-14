@@ -7,6 +7,135 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+    <header>
+      <nav>
+        <div class="wrapper clearfix">
+          <ul class="menu-items-nav">
+            <li class="mi-nav"><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li class="mi-nav"><a href="#">НОВОСТИ</a></li>
+            <li class="mi-nav"><a href="price.html">ПРАЙС-ЛИСТ</a></li>
+            <li class="mi-nav"><a href="shop.html">МАГАЗИН</a></li>
+            <li class="mi-nav"><a href="#">КОНТАКТЫ</a></li>
+          </ul>          
+          <a class="login-nav" href="#">
+            <span class="sprite sprite-icon-login login-sprite"></span>
+            <b>Вход</b>
+          </a>
+        </div>  
+     </nav>
+     <div class="wrapper promo-full">
+        <img src="img/borodinski-logo.png" width ="368px" height="204px" alt="logo"></img>
+        <div class="promo">        
+          <section>
+            <h2>Быстро</h2>
+            <div class="point-big"></div>
+            <p>
+              Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
+              счастливый обладатель стильной стрижки-минутки!
+            </p>
+          </section>
+          <section>
+            <h2>Круто</h2>
+            <div class="point-big"></div>
+            <p>
+              Забудте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино!
+              Во всяком случае внешне.
+            </p>
+          </section>
+          <section>
+            <h2>Дорого</h2>
+            <div class="point-big"></div>
+            <p>
+              Наши мастера - профессионалы своего дела и не могут стоить дешево.
+              К тому же разве цена не дает определенный статус?
+            </p>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="news-gallery">
+          <section class="news">
+            <p>
+              Нам наконец завезли ягермайстер! Теперь вы можете пропустить 
+              стаканчик во время стрижки.
+              <span class="news-data"> 11 января</span>
+            </p>
+            <p>
+            В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель
+            множества титулов и наград поплнил наши стройные ряды.
+            <span class="news-data"> 18 января</span>
+            </p>            
+            <a class="btn btn-news">Все новости</a>
+          </section>
+          <section class="gallery">
+            <div class="gallery-border">
+              <img src="img/index-photo.jpg" width="328" height="164" alt="room">
+            </div>     
+            <div class="index-group-btn">
+              <a class="btn btn-news">Назад</a>
+              <a class="btn btn-news">Вперед</a>
+            </div> 
+          </section>
+        </div>
+        <div class="contacts-reception">
+          <section class="contacts">
+            <h2>Контактная информация</h2>
+            <p>
+              Барбершоп "Бородинский"<br>
+              Адрес: Санкт-Петербург, Б.Конюшенная, Д.19/8<br>
+              телефон: +7(495)667-02-66
+            </p>
+            <p>
+              Время работы:<br>
+              Пн-Пт: с 10-00 до 22-00<br>
+              Сб-Вс: c 10-00 до 19-00 до<br>
+            </p>
+            <div class="index-group-btn">
+              <a class="btn btn-news">Как проехать</a>
+              <a class="btn btn-news">Обратная связь</a>
+            </div>
+          </section>
+          <section class="reception">
+            <h2>Записаться</h2>
+            <p>
+              Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+            </p>
+            <form action="#" method="post">
+              <input type="date" class="reception-input" id="reception-date" placeholder="Дата">
+              <input type="time" class="reception-input" id="reception-time" placeholder="Время">
+              <input type="text" class="reception-input" id="reception-name" placeholder="Ваше имя">
+              <input type="tel" class="reception-input" id="reception-tel" placeholder="Телефон">
+              
+            </form>
+            <div class="index-group-btn">
+              <a class="btn btn-submit-index">Отправить</a>              
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="contacts">          
+            <p>БАРБЕРШОП "БОРОДИНСКИЙ"</p>
+            <p>АДРЕС: Г.САНКТ-ПЕТЕРБУРГ, УЛ. Б.КОНЮШЕННАЯ, Д.19/8</p>
+            <p><a href="#">КАК НАС НАЙТИ?</a></p>
+            <p>ТЕЛЕФОН: +7(495)667-02-66</p>          
+        </div>
+        <div class="friends">
+          <p class="footer-first-p">ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <!-- Кнопки будут заданы в css. Пока так  -->
+          <a class="btn btn-footer btn-social" href="#"><div class="sprite sprite-icon-vk"></div></a>
+          <a class="btn btn-footer btn-social" href="#"><div class="sprite sprite-icon-fb"></div></a>
+          <a class="btn btn-footer btn-social" href="#"><div class="sprite sprite-icon-i"></div></a>
+        </div>
+        <div class="design">
+          <p class="footer-first-p">РАЗРАБОТАНО:</p>
+          <p><a class="btn btn-footer btn-design" href="//www.htmlacademy.ru">HTMLACADEMY.RU</a></p>
+        </div>
+      <div>
+    </footer>    
   </body>
 </html>

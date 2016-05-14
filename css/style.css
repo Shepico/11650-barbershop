@@ -1,3 +1,16 @@
+/*Подключаем PT SANS NAROW*/
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PT Sans Narrow"), url(../fonts/ptsansnarrow.woff2), url(../fonts/ptsansnarrow.woff);
+}
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-weight: bold;
+    src: local("PT Sans Narrow bold"), url(../fonts/ptsansnarrowbold.woff2), url(../fonts/ptsansnarrowbold.woff);
+}
 /*вспомогательные классы */
 img {
   max-width: 100%;
@@ -15,39 +28,111 @@ img {
   display: table;
   clear: both;  
 }
+/*==========================*/
+/*Спрайт*/
+.sprite {
+    background-image: url(../img/sprites.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -5px -5px;
+}
 
+.sprite-icon-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -33px -5px;
+}
+
+.sprite-icon-fb-b {
+    width: 12px;
+    height: 22px;
+    background-position: -55px -5px;
+}
+
+.sprite-icon-i {
+    width: 21px;
+    height: 21px;
+    background-position: -77px -5px;
+}
+
+.sprite-icon-i-b {
+    width: 21px;
+    height: 21px;
+    background-position: -108px -5px;
+}
+
+.sprite-icon-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -139px -5px;
+}
+
+.sprite-icon-vk-b {
+    width: 25px;
+    height: 16px;
+    background-position: -174px -5px;
+}
 /*=========================*/
 body {
   margin: 0 auto; 
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #000000;
-  color: #ffffff; 
+  background-image: url("../img/background-img.jpg");
+  color: #ffffff;   
 }
 
+a {
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;  
+  text-transform: uppercase;
+}
 
+h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  background-color: #000000;
+  color: #bbbbbb;
+}
+
+.btn:hover {
+  background: #663d15;
+}
 
 /*header*/
 header {
-  min-height: 74px;
-  text-align: center;
-  background-color: #000000; 
+  min-height: 74px;  
+  
 }
 
 nav {
-  background-color: red;
+  min-height: 74px;
+  background-color: #000000; 
 }
 
-.logo-nav {
-  float: left;
-  width: 140px;
+nav a:hover {
+  background-color: #242424;
 }
 
 .menu-items-nav {
   float: left;
-  width: 700px;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -59,22 +144,13 @@ nav {
   list-style:none;  
 }
 
-.menu-items-nav li:not(:first-child) span{
-  display: inline-block;
-  margin-left: -0.25em;
-  margin-right: 40px;
-  text-transform: uppercase;
-  color: #ffffff; 
-}
-
 .menu-items-nav a{
   display: inline-block;
   margin-left: -0.25em;
-  margin-right: 40px;
+  padding: 0 20px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 74px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #ffffff; 
 }
 
@@ -82,44 +158,154 @@ nav {
   margin-left: 0;
 }
 
+/*--span*/
+.menu-items-nav span{
+  display: inline-block;
+  margin-left: -0.25em;
+  font-size: 16px;
+  line-height: 74px;
+  text-decoration: none;
+  color: #ffffff;   
+}
 
+.menu-items-nav li:first-child span{
+  margin-left: 0; 
+}
+
+/*--login - logout*/
 .login-nav {
   float: right;
-  width: 60px;
+  display: block;
+  width: 108px;
   height: 100%;
+  text-align: center; 
+  cursor:pointer
+}
+
+.login-sprite {
+  display: inline-block;
+  margin-top: 29px;
+  margin-right: 10px;
+  vertical-align: top;
+  opacity: 0.3;
+}
+
+.login-nav b{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 74px;
+  text-decoration: none;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.login-nav:hover>span {
+  opacity: 1;
+}
+/*--promo*/
+.promo-full {
+  padding-top: 60px;
   text-align: center;
-  
-  background-color: lightgreen;
+}
+
+.promo>section {
+  display: inline-block;
+  vertical-align: top;
 }
 
 /*footer*/
 footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #212121;
 }
-.contacts {
-  float:left;
-  width: 330px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 70px;  
+footer p {
+  margin: 0;
+  padding: 0;
 }
 
-.frieds {
-  float:left;
-  width: 160px;
-  padding-left: 10px;
-  padding-right: 10px;  
+.footer-first-p {
+  margin-bottom: 20px;
+}
+
+.btn-footer {
+  text-align: center;  
+  color: #ffffff;
+}
+
+.btn-footer:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contacts {
+  display: inline-block;
+  width: 310px;
+  vertical-align: top;
+}
+
+.contacts a {
+  color: #ffffff;
+}
+
+.friends {
+  display: inline-block;
+  width: 140px;
+  margin-left: 90px;
+  text-align: center;  
+  vertical-align: top;
+}
+
+.friends a{
+  display: inline-block;  
+}
+
+.btn-social {
+  width: 21px;
+  height: 21px;
+  padding: 10px;  
+  margin-right: 5px;
+}
+
+.btn-social:nth-child(2) {
+  width: 25px;
+  height: 16px;
+  padding: 13px 8px 12px 8px;  
+  margin-right: 5px;
+}
+
+.btn-social:nth-child(3){
+  width: 12px;
+  height: 22px;
+  padding: 10px 13px 9px 16px;  
+}
+
+.btn-social:nth-child(4){
+  margin-right: 0;
+}
+
+.btn-social:hover {
+  
 }
 
 .design {
-  float:right;
-  width: 160px;
-  padding-left: 10px;
-  padding-right: 10px;  
+  display: inline-block;
+  width: 140px;
+  margin-left: 260px;  
+  text-align: center;  
+  vertical-align: top;
 }
+
+.btn-design {
+  width: 140px;
+  height: 41px;
+  line-height: 41px;
+  
+}
+
 /*=========================================================*/
 
-/*main*/
+/*main
 
 .part {
   padding: 10px;
@@ -139,8 +325,7 @@ footer {
 .items{
   float: right;
   width: 720px;  
-  /*временно*/
-  background-color: yellow;
+
 }
 
 .items-item {
@@ -150,9 +335,7 @@ footer {
   width: 220px;
   height: 290px;   
   margin: 10px 8px; 
-  
-  /*временно*/
-  background-color:gray;
+
 }
 
 .pagination>li {
@@ -160,7 +343,7 @@ footer {
   vertical-align:top;
   list-style:none;  
 }
-/*item*/
+/*item
 .goods-foto {
   float: left;
   width: 460px;
@@ -187,7 +370,7 @@ footer {
 
 
 
-/* магазин */
+/* магазин 
 .shop-main {
   background-color: #f9f6f3;
   color: #000000;
