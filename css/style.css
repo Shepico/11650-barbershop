@@ -185,7 +185,7 @@ nav a:hover {
   width: 108px;
   height: 100%;
   text-align: center; 
-  cursor:pointer
+  /*cursor:pointer*/
 }
 
 .login-sprite {
@@ -442,28 +442,89 @@ footer p {
   text-align: center;
 }
 /*=========================================================*/
-/*main
+/*logo - home*/
+.logo-nav {
+  display: block;
+  float: left;
+  width: 140px;
+  /*height: 100%;*/
+  padding: 25px 0;
+  margin-right: 20px;
+  text-align: center;  
+  line-height: 0;
+}
 
+/*==========shop.html============*/
+.shop-main {
+  padding: 50px 0;
+  background-color: #f9f6f3;
+  color: #000000;
+}
+/*--Хлебные крошки*/
+.breadcrumbs>ul {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs>ul>li {
+  display:inline-block;  
+  vertical-align:top;
+  list-style:none;    
+}
+
+.breadcrumbs-link {
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*--Фильтры*/
+.shop-selection{
+  float: left;
+  width: 220px;  
+  margin-right: 20px;   
+}
+
+.shop-selection fieldset {
+  margin: 0;
+  padding: 0;  
+  border: none;
+}
+
+.shop-selection fieldset>legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/*--Каталог товаров*/
+.items{
+  float: right;
+  width: 700px;    
+}
+
+.items-item {
+  display: inline-block;
+  width: 220px;
+  height: 290px;   
+  margin-right: 20px;
+  margin-left: -0.25em;  
+  vertical-align: top;
+  /*text-align: right;*/
+  box-shadow: 0 0 10px 0 #dddad8;
+}
+
+.items-item:nth-child(3n-2) {
+  margin-left: 0;
+}
+
+.items-item:nth-child(3n) {
+  margin-right: 0;
+}
+/*
 .part {
   padding: 10px;
 }
-.breadcrumbs>ul>li {
-  display:inline-block;
-  vertical-align:top;
-  list-style:none;  
-}
 
-.selection{
-  float: left;
-  width: 230px;
-  padding-left: 10px;   
-}
-
-.items{
-  float: right;
-  width: 720px;  
-
-}
 
 .items-item {
   display: inline-block;
@@ -508,8 +569,5 @@ footer p {
 
 
 /* магазин 
-.shop-main {
-  background-color: #f9f6f3;
-  color: #000000;
-}
+
 
