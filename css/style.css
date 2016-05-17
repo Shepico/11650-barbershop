@@ -478,6 +478,10 @@ footer p {
   color: #000000;
 }
 
+.shop-goods-page {
+  padding-top: 54px;
+}
+
 /*--Фильтры*/
 .shop-selection{
   float: left;
@@ -488,6 +492,7 @@ footer p {
 .shop-selection fieldset {
   margin: 0;
   padding: 0;  
+  margin-bottom: 45px;
   border: none;
 }
 
@@ -495,6 +500,106 @@ footer p {
   font-size: 24px;
   line-height: 30px;
 }
+
+
+label {
+  display: block;
+  line-height: 18px;
+  margin: 9px 0;
+  padding-left: 20px;
+}
+
+.btn-shop-view {
+  width: 112px;
+  height: 45px;
+  border: none;
+}
+
+/*--стилизация чекбокса*/
+/*.checkboxsprite {
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.radiobutton {
+    width: 8px;
+    height: 8px;
+    background-position: -27px -5px;
+}*/
+/**/
+.checkbox {
+  display: none;
+}
+
+.checkbox + label {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/*--выключен*/
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0;
+  padding-left: 40px;
+}
+
+.checkbox:not(checked) + label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;  
+  border: 1px solid #000000;  
+  content: '';
+}
+
+/*--включен*/
+.checkbox:checked + label:before {
+  background-image: url(../img/checkbox.png);
+  background-position: -2px -2px;  
+ }
+ 
+/*--radiobutton*/
+.radiobutton {
+  display: none;
+}
+
+.radiobutton + label {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/*--выключен*/
+.radiobutton:not(checked) + label {
+  position: relative;
+  padding: 0;
+  padding-left: 40px;
+}
+
+.radiobutton:not(checked) + label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;  
+  border: 1px solid #000000;  
+  border-radius: 50%;
+  content: '';
+}
+
+/*--включен*/
+.radiobutton:checked + label:before {
+  background-image: url(../img/checkbox.png);
+  background-position: -22px 0px;
+ } 
+
 
 /*--Каталог товаров*/
 .items{
@@ -507,7 +612,8 @@ footer p {
   width: 220px;
   height: 290px;   
   margin-right: 20px;
-  margin-left: -0.25em;  
+  margin-left: -0.25em; 
+  margin-bottom: 20px;  
   vertical-align: top;
   /*text-align: right;*/
   box-shadow: 0 0 10px 0 #dddad8;
@@ -520,6 +626,13 @@ footer p {
 .items-item:nth-child(3n) {
   margin-right: 0;
 }
+/*--*/
+.pagination>li {
+  display:inline-block;
+  vertical-align:top;
+  list-style:none;  
+}
+
 /*
 .part {
   padding: 10px;
@@ -536,11 +649,7 @@ footer p {
 
 }
 
-.pagination>li {
-  display:inline-block;
-  vertical-align:top;
-  list-style:none;  
-}
+
 /*item
 .goods-foto {
   float: left;
