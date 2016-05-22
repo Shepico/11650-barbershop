@@ -31,51 +31,51 @@ img {
 /*==========================*/
 /*Спрайт*/
 .sprite {
-    background-image: url(../img/sprites.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-icon-login {
-    width: 18px;
-    height: 16px;
-    background-position: -5px -5px;
+  width: 18px;
+  height: 16px;
+  background-position: -10px -10px;
 }
 
 .sprite-icon-fb {
-    width: 12px;
-    height: 22px;
-    background-position: -33px -5px;
+  width: 12px;
+  height: 22px;
+  background-position: -33px -1px;
 }
 
 .sprite-icon-fb-b {
-    width: 12px;
-    height: 22px;
-    background-position: -55px -5px;
+  width: 12px;
+  height: 22px;
+  background-position: -80px -10px;
 }
 
 .sprite-icon-i {
-    width: 21px;
-    height: 21px;
-    background-position: -77px -5px;
+  width: 21px;
+  height: 21px;
+  background-position: -102px 0px;
 }
 
 .sprite-icon-i-b {
-    width: 21px;
-    height: 21px;
-    background-position: -108px -5px;
+  width: 21px;
+  height: 21px;
+  background-position: -153px -10px;
 }
 
 .sprite-icon-vk {
-    width: 25px;
-    height: 16px;
-    background-position: -139px -5px;
+  width: 25px;
+  height: 16px;
+  background-position: -186px 3px;
 }
 
 .sprite-icon-vk-b {
-    width: 25px;
-    height: 16px;
-    background-position: -174px -5px;
+  width: 25px;
+  height: 16px;
+  background-position: -239px -10px;
 }
 /*=========================*/
 body {
@@ -120,8 +120,8 @@ h3 {
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
-  background-color: #000000;
-  /*color: #bbbbbb;*/
+  text-transform: uppercase;
+  background-color: #000000;  
   color: #ffffff;
 }
 
@@ -211,6 +211,7 @@ nav a:hover {
   width: 108px;
   height: 100%;
   text-align: center; 
+  text-decoration: none;
   /*cursor:pointer*/
 }
 
@@ -231,7 +232,7 @@ nav a:hover {
   color: #ffffff;
 }
 
-.login-nav:hover>span {
+.login-nav:hover > span {
   opacity: 1;
 }
 /*--promo*/
@@ -241,7 +242,7 @@ nav a:hover {
   color: #f7f4f1;
 }
 
-.promo>section {
+.promo > section {
   display: inline-block;
   width: 300px;
   margin: 0;
@@ -250,10 +251,10 @@ nav a:hover {
   vertical-align: top;
 }
 
-.promo>section:not(:last-child) {
+.promo > section:not(:last-child) {
   margin-right: 20px;
 } 
-.promo>section:first-child {
+.promo > section:first-child {
   margin-left: 0;
 }
 
@@ -287,15 +288,15 @@ footer p {
   margin-bottom: 15px;
 }
 
-.btn-footer {
+/*.btn-footer {
   text-align: center;  
   color: #ffffff;
-}
+}*/
 
-.btn-footer:hover {
+/*.btn-footer:hover {
   background-color: #ffffff;
   color: #000000;
-}
+}*/
 
 .footer-contacts {
   display: inline-block;
@@ -316,44 +317,50 @@ footer p {
   vertical-align: top;
 }
 
-.friends a{
-  display: inline-block;  
-}
-
-.vk:hover>div {
-  background-position: -174px -5px;
-}
-
-.fb:hover>div {
-  background-position: -55px -5px;
-}
-
-.ig:hover>div {
-  background-position: -108px -5px;
-}
+/*.friends a{
+  display: inline-block;    
+}*/
 
 .btn-social {
-  width: 21px;
-  height: 21px;
-  padding: 10px;  
+  display: inline-block;  
+  width: 41px;
+  height: 41px;
+  /*padding: 10px;  */
   margin-right: 5px;
+  text-align: center;  
+  color: #ffffff;
+}
+.btn-social  >  div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.btn-social:nth-child(2) {
-  width: 25px;
-  height: 16px;
-  padding: 13px 8px 12px 8px;  
-  margin-right: 5px;
+.vk{
+  margin-right: 5px;  
+  background-position: -186px 3px;
 }
 
-.btn-social:nth-child(3){
-  width: 12px;
-  height: 22px;
-  padding: 10px 13px 9px 16px;  
-}
-
-.btn-social:nth-child(4){
+.ig{
   margin-right: 0;
+}
+
+.btn-social:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+  
+.vk:hover  >  div {
+  background-position: -231px 3px;
+}
+
+.fb:hover  >  div {
+  background-position: -66px -1px;
+}
+
+.ig:hover  >  div {
+  background-position: -143px 0px;
 }
 
 .design {
@@ -367,8 +374,7 @@ footer p {
 .btn-design {
   width: 140px;
   height: 41px;
-  line-height: 41px;
-  
+  line-height: 41px;  
 }
 
 /*=========================================================*/
@@ -544,12 +550,12 @@ footer p {
   margin-bottom: 15px;
 }
 /*--Хлебные крошки*/
-.breadcrumbs>ul {
+.breadcrumbs > ul {
   margin: 0;
   padding: 0;
 }
 
-.breadcrumbs>ul>li {
+.breadcrumbs > ul > li {
   position: relative;
   display:inline-block;  
   vertical-align:top;
@@ -563,7 +569,7 @@ footer p {
   color: #000000;
 }
 
-.breadcrumbs>ul>li:not(:last-child)::after {
+.breadcrumbs > ul > li:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -575,7 +581,7 @@ footer p {
   transform: rotate(45deg);
 }
 
-.breadcrumbs li>span {
+.breadcrumbs li > span {
   color: #aba9a7;
 }
 
@@ -597,7 +603,7 @@ footer p {
   border: none;
 }
 
-.shop-selection fieldset>legend {
+.shop-selection fieldset > legend {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -669,7 +675,7 @@ label {
   width: 18px;
   height: 18px;  
   border: 1px solid #000000;  
-  content: '';
+  content: "";
 }
 
 /*--включен*/
@@ -703,7 +709,7 @@ label {
   height: 18px;  
   border: 1px solid #000000;  
   border-radius: 50%;
-  content: '';
+  content: "";
 }
 
 /*--включен*/
@@ -747,7 +753,7 @@ label {
   margin-top: 22px;
 }
 
-.shop-pagination>li {
+.shop-pagination > li {
   display:inline-block;
   margin-right: 5px;
   text-align: center;
@@ -814,23 +820,28 @@ label {
   height: 44px;
   margin-top: 15px;
   margin-left: 16px;
-  line-height: 44px;
+  line-height: 43px;  
+
 }
 
 .items-item-cost {
   display: inline-block;
-  width: 110px;
-  text-align: center;
-  
+  width: 110px;  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;  
   background-color: #e5e5e5;
 }
 
 .shop-btn-buy {
   display: inline-block;
-  width: 78px;
-  margin-left: -0.25em;  
-  padding: 15px 0;
-  text-align: center;
+  width: 78px;  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: -0.22em;    
+  text-align: center;  
   border: none;
 }
 /*price.html*/
@@ -926,7 +937,7 @@ label {
   padding-bottom: 10px;
 }
 
-.price-about>h3 {
+.price-about > h3 {
    margin-bottom: 15px;
 }
 
@@ -962,12 +973,12 @@ label {
   box-shadow: 0 0 5px 0 #e4e2df;
 }
 
-.goods-foto-list>img {
+.goods-foto-list > img {
   margin: 0;
   box-shadow: 0 0 5px 0 #e4e2df;
 }
 
-.goods-foto-list>img:not(:last-child) {
+.goods-foto-list > img:not(:last-child) {
   margin-right: 17px;
   
 }
@@ -1047,4 +1058,39 @@ label {
 
   background-color: #000000;
   transform: rotate(45deg);
+}
+
+/*popup*/
+.form-login {
+  position: absolute;
+  top: 13%;
+  left: 40%;
+  width: 300px;
+  height: 265px;
+  padding: 60px 80px;
+  background-color: #faf7f4;
+  color: #000000;
+  box-shadow: 0 0 40px 0 #000000;
+}
+
+.form-login>h2 {
+  margin: 0;
+  padding: 0;  
+}
+
+.form-login-text {
+  margin: 0;
+  padding: 0;
+}
+
+.form-login-input {
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 10px;
+  
+}
+
+.form-login label {
+  display: inline-block;
 }
