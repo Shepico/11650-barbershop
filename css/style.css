@@ -1085,7 +1085,7 @@ label {
 
 .form-login-input {
   display: block;
-  width: 100%;
+  width: 270px;
   height: 42px;
   margin-bottom: 10px;
   
@@ -1093,4 +1093,20 @@ label {
 
 .form-login label {
   display: inline-block;
+}
+
+.remember-link {
+  display: block;
+  float:right;
+  text-transform: uppercase;
+  color: #000000;
+}
+/*чекбокс*/
+.remember-check+label {
+  cursor: pointer;
+}
+
+.remember-check:not(checked) {
+  position: absolute;
+  opacity: 0;
 }
