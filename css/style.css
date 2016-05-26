@@ -1061,47 +1061,109 @@ label {
 }
 
 /*popup*/
-.form-login {
+.form-lk {
   position: absolute;
   top: 13%;
   left: 40%;
   width: 300px;
-  height: 265px;
+  /*height: 225px;*/
   padding: 60px 80px;
   background-color: #faf7f4;
   color: #000000;
   box-shadow: 0 0 40px 0 #000000;
 }
 
-.form-login>h2 {
+.form-lk>h2 {
   margin: 0;
   padding: 0;  
+  margin-bottom: 30px;
+  line-height: 25px;
 }
-
-.form-login-text {
+.form-lk>fieldset {
   margin: 0;
   padding: 0;
+  
+  border: none;
 }
 
-.form-login-input {
+.form-lk-text {
+  
+  margin-bottom: 16px;
+  line-height: 14px;
+}
+
+.form-lk-data {
+  margin-bottom: 6px;
+}
+.form-lk-input {
   display: block;
-  width: 270px;
-  height: 42px;
-  margin-bottom: 10px;
+  width: 268px;
+  height: 41px;
+  padding: 0 15px;
+  margin-bottom: 9px;
+  text-transform: uppercase;  
+  border: 1px solid #000000;
   
 }
 
-.form-login label {
-  display: inline-block;
+
+.form-lk-buttons   {
+  margin-top: 15px;
+}
+
+.remember {
+  margin: 0;
+  padding: 0;
+  float: left;
+  line-height: 14px;
 }
 
 .remember-link {
   display: block;
   float:right;
+  line-height: 14px;
   text-transform: uppercase;
   color: #000000;
 }
-/*чекбокс*/
+
+.btn-submit-index {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+/*спрайты*/
+.logout {
+    background-image: url(../img/logout.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.logout-locked {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -10px;
+}
+
+.logout-login {
+    width: 15px;
+    height: 15px;
+    background-position: -45px -10px;
+}
+
+.input-login {
+  background-position:  45px 10px;
+  
+}
+
+/*
+.form-login label {
+  display: inline-block;
+}
+
+
+
+
+/*чекбокс*//*
 .remember-check+label {
   cursor: pointer;
 }
@@ -1109,4 +1171,4 @@ label {
 .remember-check:not(checked) {
   position: absolute;
   opacity: 0;
-}
+}*/

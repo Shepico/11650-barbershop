@@ -143,23 +143,25 @@
         </div>
       </div>
     </footer>  
-    <div class="form-login">
+    <!--Всплвающие окна-->
+    <form class="form-lk" action="#" method="post">
       <h2>Личный кабинет</h2>
-      <p class="form-login-text">Введите пожалуйста свой логин и пароль</p>
-      <form action="#" method="post">
-        <input type="text" class="reception-input form-login-input" id="form-login" placeholder="Логин">
-        <input type="password" class="reception-input form-login-input" id="form-password" placeholder="Пароль">
-        
+      <fieldset class = "form-lk-data">
+        <legend class="form-lk-text">Введите пожалуйста свой логин и пароль</legend>
+        <input type="text" class="form-lk-input logout input-login" id="form-login" placeholder="Логин">
+        <input type="password" class="form-lk-input" id="form-password" placeholder="Пароль">  
+      </fieldset>
+      
+      <fieldset class = "form-lk-buttons">
         <div class="clearfix">
-          <input class="remember-check" type="checkbox" id="form-remember">        
-          <label for="form-remember">Запомните меня</label>
+          <input class="remember remember-check" type="checkbox" id="form-remember">        
+          <label class="remember" for="form-remember">Запомните меня</label>
           
           <a href="#" class="remember-link">Я забыл пароль</a>
         </div>  
+        
         <a class="btn btn-submit-index">Войти</a>
-      </form>  
-           
-      
-    </div>
+      </fieldset>
+    </form>     
   </body>
 </html>
