@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header>
@@ -98,7 +98,7 @@
               Сб-Вс: c 10-00 до 19-00 до<br>
             </p>
             <div class="index-group-btn">
-              <a class="btn btn-news">Как проехать</a>
+              <a class="btn btn-news js-btn-map">Как проехать</a>
               <a class="btn btn-news">Обратная связь</a>
             </div>
           </section>
@@ -109,8 +109,8 @@
               Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
             </p>
             <form action="#" method="post">
-              <input type="date" class="reception-input" id="reception-date" placeholder="Дата">
-              <input type="time" class="reception-input" id="reception-time" placeholder="Время">
+              <input type="date" class="reception-input" id="reception-date">
+              <input type="time" class="reception-input" id="reception-time">
               <input type="text" class="reception-input" id="reception-name" placeholder="Ваше имя">
               <input type="tel"  class="reception-input" id="reception-tel"  placeholder="Телефон">
               
@@ -144,12 +144,18 @@
       </div>
     </footer>  
     <!--Всплвающие окна-->
-    <form class="form-lk" action="#" method="post">
+    <form class="form-lk not-visible" action="#" method="post">
       <h2>Личный кабинет</h2>
       <fieldset class = "form-lk-data">
         <legend class="form-lk-text">Введите пожалуйста свой логин и пароль</legend>
-        <input type="text" class="form-lk-input logout input-login" id="form-login" placeholder="Логин">
-        <input type="password" class="form-lk-input" id="form-password" placeholder="Пароль">  
+        <div class = "full-input"> 
+          <input type="text" class="form-lk-input" id="form-login" placeholder="Логин">
+          <div class="logout logout-login"></div>
+        </div>  
+        <div class = "full-input"> 
+          <input type="password" class="form-lk-input" id="form-password" placeholder="Пароль">
+          <div class="logout logout-locked"></div>  
+        </div>  
       </fieldset>
       
       <fieldset class = "form-lk-buttons">
@@ -162,6 +168,16 @@
         
         <a class="btn btn-submit-index">Войти</a>
       </fieldset>
-    </form>     
+      <button class="btn-close btn-close-lk" type="button" name="map-big-close">Закрыть</button>
+    </form>    
+    <!--карта-->
+    <div class="map-popup not-visible">
+      <button class="btn-close btn-close-map" type="button" name="map-big-close">Закрыть</button>
+      <div id="map-yandex"></div>
+    </div>      
+    <!--Подключение скрипта-->    
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=IpITNLhNiEQ2_FVrM0cRfPPXrqNnmbOB&width=760&height=560&lang=ru_RU&sourceType=constructor&scroll=true&id=map-yandex"></script>
+    
+    <script src="js/script.min.js"></script>     
   </body>
 </html>
